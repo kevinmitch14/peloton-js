@@ -32,7 +32,7 @@ const MenuItem = ({ filterInput, cartHandler, sortInput, categoryInput }) => {
                 return (
                     <div key={item.id} className='MenuItem'>
                         {item.menu_category_id === 1 ?
-                            <img alt='burger' height='40%' width='40%' src='https://www.flaticon.com/svg/vstatic/svg/3075/3075929.svg?token=exp=1615783535~hmac=9bff0f1cd040cc3097773df79f438207'></img> :
+                            <img alt='burger' height='40%' width='40%' src='https://www.flaticon.com/svg/vstatic/svg/3075/3075977.svg?token=exp=1615784172~hmac=5c50a70a67c350ad60316ba1dd404e0c'></img> :
                             <img alt='pizza' height='40%' width='40%' src='https://www.flaticon.com/svg/vstatic/svg/2094/2094661.svg?token=exp=1615783494~hmac=e006b5f26ca5459795b0edda6ffebc8f'></img>}
                         <p>{item.name}</p>
                         <p>€{item.price}</p>
