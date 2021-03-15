@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.MenuItem {
+  background-color: #eff1f5;
+  border-radius: 10px;
+  margin: 2em;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu-hub {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.Header {
+  background-color: #1c5955;
+  color: #f5efe5;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 2em;
+  padding-right: 2em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Header #header-title {
+  font-size: 3em;
+}
+
+.Cart {
+  font-size: 1.5em;
+}
+
+#image-placeholder {
+  background-color: #cabebe;
+  margin-bottom: 1em;
+  height: 150px;
+  width: 10em;
+}
+
+.Input {
+  padding-right: 2em;
+  padding-left: 2em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.Input .category-buttons button {
+  margin-right: 1em;
+  padding: 0.5em;
+}
+
+.Input .filter-handlers input {
+  padding: 0.7em;
+  margin-right: 2em;
+}
+
+.Input .filter-handlers select {
+  padding: 0.7em;
+  background-color: #eff1f5;
+}
+
+#burger-button,
+#pizza-button,
+#clear-button {
+  background: transparent;
+  border: none;
+  color: black;
+  font-size: 1.2em;
+  background-color: #eff1f5;
+  border-radius: 10px;
+}
+
+#burger-button:focus,
+#pizza-button:focus,
+#clear-button:focus {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #1c5955;
+          text-decoration-color: #1c5955;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+  outline: none;
+}
+
+#cart-button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin-left: 0.5em;
+  font-size: 0.8em;
+  color: #cabebe;
+  text-decoration: underline;
+}
+
+#clear-button {
+  min-width: 60px;
+}
+
+@media (max-width: 700px) {
+  .Header {
+    font-size: 0.8em;
+  }
+  .Input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Input .category-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .Input .category-buttons button {
+    margin: 0;
+  }
+  .Input .filter-handlers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 1em;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu-hub {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 500px) {
+  .menu-hub {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 750px) {
+  .menu-hub {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1050px) {
+  .menu-hub {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+#total-cart {
+  color: red;
+  font-size: 0.9em;
+}
+/*# sourceMappingURL=App.css.map */
