@@ -10,7 +10,6 @@ const Input = ({ filterHandler, sortHandler, categoryHandler }) => {
 
     return (
         <div className='Input'>
-
             <div className='filter-handlers'>
                 <input type='text' placeholder='Search...' onChange={filterHandler}></input>
                 <select defaultValue='default' onChange={sortHandler}>

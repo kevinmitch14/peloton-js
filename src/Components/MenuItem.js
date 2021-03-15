@@ -2,12 +2,15 @@ import React from 'react'
 import menu from '../menu'
 import '../Styles/App.css'
 import { OrderModal } from './Modal'
+import { default as pizza } from '../Styles/pizza.svg'
+import { default as burger } from '../Styles/hamburger.svg'
 
 
 
 const MenuItem = ({ filterInput, cartHandler, sortInput, categoryInput }) => {
 
     // Destructuring of JSON data
+
     const { categories } = menu
     console.log(categories)
 
@@ -32,14 +35,15 @@ const MenuItem = ({ filterInput, cartHandler, sortInput, categoryInput }) => {
                 return (
                     <div key={item.id} className='MenuItem'>
                         {item.menu_category_id === 1 ?
-                            <img alt='burger' height='40%' width='40%' src='https://www.flaticon.com/svg/vstatic/svg/3075/3075977.svg?token=exp=1615784172~hmac=5c50a70a67c350ad60316ba1dd404e0c'></img> :
-                            <img alt='pizza' height='40%' width='40%' src='https://www.flaticon.com/svg/vstatic/svg/2094/2094661.svg?token=exp=1615783494~hmac=e006b5f26ca5459795b0edda6ffebc8f'></img>}
+                            <img alt={'burger'} height={'50%'} width={'50%'} src={burger}></img> :
+                            <img alt={'pizza'} height={'50%'} width={'50%'} src={pizza}></img>
+                        }
                         <p>{item.name}</p>
                         <p>€{item.price}</p>
                         {/* <p>{item.description}</p> */}
                         {/* Displaying unavailable items but alerting user of this */}
                         {item.active ?
-                            <OrderModal item={item} cartHandler={cartHandler} originComponent='Order' /> : <p style={{ color: 'red' }}>Not available</p>}
+                            <OrderModal item={item} cartHandler={cartHandler} originComponent='Order' /> : <p style={{ color: 'red', marginTop: '1em' }}>Not available</p>}
                     </div>
                 )
             }))
